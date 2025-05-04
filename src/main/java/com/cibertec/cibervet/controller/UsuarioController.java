@@ -17,11 +17,11 @@ public class UsuarioController {
 
     @PostMapping("/registrarUsuario")
     public UsuarioResponse registrarUsuario(@RequestBody Usuario usuario) {
-//        Usuario registro = usuarioRepository.save(usuario);
+        Usuario registro = usuarioRepository.save(usuario);
         System.out.println("Registrando usuario");
 
         UsuarioResponse response = UsuarioResponse.builder()
-                .idUsuario(18)
+                .idUsuario(registro.getIdUsuario())
                 .mensaje("Usuario registrado")
                 .build();
 

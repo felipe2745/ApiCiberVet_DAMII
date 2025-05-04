@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://${RAILWAY_PRIVATE_DOMAIN}:5432/${PGDATABASE}
-    username: ${PGUSER}
-    password: ${POSTGRES_PASSWORD}
+    url: jdbc:postgresql://turntable.proxy.rlwy.net:19896/railway
+    username: postgres
+    password: cvnicrbVAEtmQFFhCLUnynOUtUvSAVCl
 #  datasource:
 #    url: jdbc:postgresql://localhost:5432/db_cibervet
 #    username: postgres

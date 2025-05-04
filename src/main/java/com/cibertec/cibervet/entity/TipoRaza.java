@@ -4,12 +4,12 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
-@Table(name = "tb_tipo_documento", schema = "general")
+@Table(name = "tb_tipo_raza", schema = "general")
 @Data
-public class TipoDocumento {
+public class TipoRaza {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_tipo_documento")
-    private Integer idTipoDocumento;
+    @Column(name = "id_tipo_raza")
+    private Integer idTipoRaza;
     private String nombre;
 }
